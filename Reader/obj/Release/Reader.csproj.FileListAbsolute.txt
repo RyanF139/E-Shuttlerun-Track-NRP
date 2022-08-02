@@ -31,3 +31,10 @@ C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_Shuttle
 C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Reader\obj\Release\Reader.csproj.CopyComplete
 C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Reader\obj\Release\Reader.dll
 C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Reader\obj\Release\Reader.pdb
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Dlls\Reader.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Dlls\Reader.pdb
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Reader\obj\Release\Reader.csproj.AssemblyReference.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Reader\obj\Release\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Reader\obj\Release\Reader.csproj.CopyComplete
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Reader\obj\Release\Reader.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Reader\obj\Release\Reader.pdb

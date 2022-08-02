@@ -35,3 +35,11 @@ C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_Shuttle
 C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\CustomControl\obj\Release\CustomControl.csproj.CoreCompileInputs.cache
 C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\CustomControl\obj\Release\CustomControl.dll
 C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\CustomControl\obj\Release\CustomControl.pdb
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Dlls\CustomControl.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Dlls\CustomControl.pdb
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\CustomControl\obj\Release\CustomControl.csproj.AssemblyReference.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\CustomControl\obj\Release\CustomControl.IpAddressTextBox.resources
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\CustomControl\obj\Release\CustomControl.csproj.GenerateResource.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\CustomControl\obj\Release\CustomControl.csproj.CoreCompileInputs.cache
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\CustomControl\obj\Release\CustomControl.dll
+C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\CustomControl\obj\Release\CustomControl.pdb
