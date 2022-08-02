@@ -1,0 +1,33 @@
+C:\Users\ShuttleRunTCB\Documents\App\VS2017\ShuttleRun\Main Project\Track_ShuttleRun\Dlls\Reader.dll
+C:\Users\ShuttleRunTCB\Documents\App\VS2017\ShuttleRun\Main Project\Track_ShuttleRun\Dlls\Reader.pdb
+C:\Users\ShuttleRunTCB\Documents\App\VS2017\ShuttleRun\Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csprojAssemblyReference.cache
+C:\Users\ShuttleRunTCB\Documents\App\VS2017\ShuttleRun\Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csproj.CoreCompileInputs.cache
+C:\Users\ShuttleRunTCB\Documents\App\VS2017\ShuttleRun\Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csproj.CopyComplete
+C:\Users\ShuttleRunTCB\Documents\App\VS2017\ShuttleRun\Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.dll
+C:\Users\ShuttleRunTCB\Documents\App\VS2017\ShuttleRun\Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.pdb
+E:\New_Shuttle\1. Main Project\Track_ShuttleRun\Dlls\Reader.dll
+E:\New_Shuttle\1. Main Project\Track_ShuttleRun\Dlls\Reader.pdb
+E:\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csprojResolveAssemblyReference.cache
+E:\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.dll
+E:\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.pdb
+D:\New_Shuttle\1. Main Project\Track_ShuttleRun\Dlls\Reader.dll
+D:\New_Shuttle\1. Main Project\Track_ShuttleRun\Dlls\Reader.pdb
+D:\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csproj.AssemblyReference.cache
+D:\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csproj.CoreCompileInputs.cache
+D:\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csproj.CopyComplete
+D:\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.dll
+D:\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.pdb
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun\Dlls\Reader.dll
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun\Dlls\Reader.pdb
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csproj.AssemblyReference.cache
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.csproj.CopyComplete
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.dll
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun\Reader\obj\Release\Reader.pdb
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Dlls\Reader.dll
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Dlls\Reader.pdb
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Reader\obj\Release\Reader.csproj.AssemblyReference.cache
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Reader\obj\Release\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Reader\obj\Release\Reader.csproj.CopyComplete
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Reader\obj\Release\Reader.dll
+C:\Users\Shuttle Run Station\Documents\New_Shuttle\1. Main Project\Track_ShuttleRun Barcode\Reader\obj\Release\Reader.pdb
