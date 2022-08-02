@@ -261,9 +261,9 @@ namespace Track_ShuttleRun
                             string InsertHistoryWaktu = "insert into history (no_peserta,no_track,barcode,putaran1,putaran2,putaran3,waktu_akhir) values ('" + no_Peserta + "','" + Track + "','" + nrpid + "','" + 0 + "','" + 0 + "','" + 0 + "','" + 0 + "')";
                             new Connect().execute(InsertHistoryWaktu);
 
-
-
                             showMessage("Klik 'Connect'", Color.FromArgb(243, 246, 249));
+
+                            btnConnect.Enabled = true;
                         }
                         else
                         {
@@ -314,6 +314,7 @@ namespace Track_ShuttleRun
             btn_Ulangi.Hide();
             icon_Female.Hide();
             icon_Male.Hide();
+            btnInventory.Enabled = false;
             
 
             //CekSeleksi();
@@ -1551,7 +1552,7 @@ namespace Track_ShuttleRun
                 btnConnect.Enabled = true;
                 ConnectReader();
                
-                showMessage("Klik 'Start'", Color.FromArgb(243, 246, 249));
+                
 
             }
             else if (btnConnect.Text.Equals(FindResource("Disconnect")))
@@ -1633,6 +1634,9 @@ namespace Track_ShuttleRun
                         string strLog = string.Format("{0} {1}:{2}", FindResource("tipConnect"), ipIpServer.IpAddressStr, nPort);
                         WriteLog(lrtxtLog, strLog, 0);
                         btnConnect.Text = FindResource("Disconnect");
+
+                        btnInventory.Enabled = true;
+                        showMessage("Klik 'Start'", Color.FromArgb(243, 246, 249));
                     }
 
                     SetFormEnable(true);
@@ -4468,6 +4472,9 @@ namespace Track_ShuttleRun
             {
                 if (Inventorying)
                 {
+                    showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));
+                    PlaySoundStart();
+                    btn_Reload.Enabled = false;
                     MessageBox.Show(FindResource("Inventorying"));                    
                     return;
                 }
@@ -5923,6 +5930,7 @@ namespace Track_ShuttleRun
                                                 
                                                 showMessage("Putaran 1", Color.FromArgb(243, 246, 249));
                                                 Label_JumlahPutaran.Text = "1";
+                                                PlaySoundCounter();
 
 
                                                 string History1 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
@@ -5937,7 +5945,7 @@ namespace Track_ShuttleRun
                                                 
                                                 showMessage("Putaran 2", Color.FromArgb(243, 246, 249));
                                                 Label_JumlahPutaran.Text = "2";
-
+                                                PlaySoundCounter();
 
                                                 string History2 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                                 DataTable history2 = new Connect().getTable(History2);
@@ -5959,6 +5967,7 @@ namespace Track_ShuttleRun
                                                 new Connect().execute(UpdateAkhir);
                                                 //MessageBox.Show("Selesai");
                                                 Label_JumlahPutaran.Text = "3";
+                                                PlaySoundCounter();
 
                                                 string History3 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                                 DataTable history3 = new Connect().getTable(History3);
@@ -6004,7 +6013,8 @@ namespace Track_ShuttleRun
                                 //new Connect().execute(InsertHistory);
 
                                 //MessageBox.Show ("Salah");
-                                    showMessage("Salah",Color.FromArgb(243, 246, 249));                                    
+                                    showMessage("Salah",Color.FromArgb(243, 246, 249));
+                                    PlaySoundWrongTrack();
                                     //this.Close();
                                 }
                             }
@@ -6608,11 +6618,34 @@ namespace Track_ShuttleRun
             }
         }
 
+        public void PlaySoundStart()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.Play();
+
+        }
+
+        public void PlaySoundCounter()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\counting shuttle run.wav";
+            myPlayer.Play();
+
+        }
+
+        public void PlaySoundWrongTrack()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\wrong track.wav";
+            myPlayer.Play();
+
+        }
+
         private void btnInventory_Click_1(object sender, EventArgs e)
         {
            
-            showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));
-            btn_Reload.Enabled = false;
+            
             stopwatch.Stop();
             timer1.Stop();
             if (radio_btn_fast_inv.Checked)
@@ -8200,8 +8233,7 @@ namespace Track_ShuttleRun
                 Console.WriteLine(UpdateHistoryWaktu);
                 bool updated = new Connect().execute(UpdateHistoryWaktu);
                 //MessageBox.Show(updated.ToString());
-
-                btnInventory.Enabled = true;
+               
                 //btnConnect.Enabled = true;
                 Label_Timer.Text = "00-00";
                 Label_JumlahPutaran.Text = "0";
@@ -8214,6 +8246,7 @@ namespace Track_ShuttleRun
                
                 showMessage("Klik 'Connect'", Color.FromArgb(243, 246, 249));
                 btn_Ulangi.Hide();
+                btnConnect.Enabled = true;
             }
             catch(Exception ex)
             {

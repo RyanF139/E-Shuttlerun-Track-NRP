@@ -180,6 +180,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon ShuttleRun.ico" />
+    <Content Include="Sound\countdown shuttle run.wav" />
+    <Content Include="Sound\counting shuttle run.wav" />
+    <Content Include="Sound\wrong track.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
