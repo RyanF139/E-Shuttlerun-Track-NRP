@@ -77,9 +77,11 @@ namespace Track_ShuttleRun
         public string url = System.Configuration.ConfigurationManager.AppSettings["SERVER_API"];
         public string routeGetPeserta = "/api/v2/garjas/peserta/search?nrp=";
         public string routePostNilai = "/api/v2/garjas/nilai";
+        public string routeGetTestor = "/api/v2/garjas/testor/user?subjenis_test=SHUTTLE RUN&user_id=";
 
         public string seleksiID;
-        public string NamaTestor;
+        public string nama_testor;
+        public string id_testor;
 
         /// <summary> 
         /// Define a variable for the inventory test log
@@ -131,8 +133,8 @@ namespace Track_ShuttleRun
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             InitializeComponent();
 
-            
 
+            
             textBarId.Text = "NRP";
             
             initFindResource();
@@ -190,15 +192,43 @@ namespace Track_ShuttleRun
             rdbEpc.Checked = true;
         }
 
-        
 
+       /* public async void GetTestor()
+        {
+            try
+            {
+
+                string GET_Data_Testor = url + routeGetTestor + id_testor;
+
+                Console.WriteLine(GET_Data_Testor);
+
+                HttpResponseMessage response = await client.GetAsync(GET_Data_Testor);
+                response.EnsureSuccessStatusCode();
+
+                var responseString = await client.GetStringAsync(GET_Data_Testor);
+                JObject stuff = JObject.Parse(responseString);
+
+                JArray data = (JArray)stuff["data"];
+
+                int i = 0;
+                
+                foreach (JObject obj in data)
+                {
+                    //Console.Write(obj);
+                    nama_testor = obj["nama"].ToString();
+                }
+            }
+            catch (HttpRequestException e)
+            {
+
+            }
+        }*/
 
         async void getData() 
         {
 
             try
-            {
-
+            {                
                 string nrpid = textBarId.Text;                                                
                 string GET_Data_Peserta = url + routeGetPeserta+nrpid;
 
@@ -215,6 +245,7 @@ namespace Track_ShuttleRun
 
                 if (stuff["status"].ToString() == "Success")
                 {
+                    
                     JObject data = JObject.Parse(stuff["data"].ToString());
                     Console.WriteLine(data);
                     string nama = data["nama"].ToString() == "" ? "-" : data["nama"].ToString();
@@ -240,7 +271,7 @@ namespace Track_ShuttleRun
                         lblJabatan.Text = jabatan;
                         lblUsia.Text = ((DateNow - tanggalLahir) / 10000).ToString();
                         Label_NoPeserta.Text = no_Peserta;
-                        lblTestor.Text = NamaTestor;
+                        lblTestor.Text = nama_testor;
 
                         if (jenisKelamin == "PRIA")
                         {
@@ -300,15 +331,18 @@ namespace Track_ShuttleRun
         {
 
             //Argumen
-
+            
             string[] passedInArgs = Environment.GetCommandLineArgs();
 
             if (passedInArgs.Length > 1)
             {                
-                NamaTestor = passedInArgs[1];
-                seleksiID = passedInArgs[2];                
-                //MessageBox.Show(idTestor);
+                id_testor = passedInArgs[1];
+                seleksiID = passedInArgs[2];
+                nama_testor = passedInArgs[3];
+                //MessageBox.Show(nama_testor);
             }
+
+            /*GetTestor();*/
 
             Label_No_ShuttleRun.Text = System.Configuration.ConfigurationManager.AppSettings["NoShuttleRun"];
             btn_Ulangi.Hide();
@@ -4472,8 +4506,7 @@ namespace Track_ShuttleRun
             {
                 if (Inventorying)
                 {
-                    showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));
-                    PlaySoundStart();
+                    
                     btn_Reload.Enabled = false;
                     MessageBox.Show(FindResource("Inventorying"));                    
                     return;
@@ -4539,6 +4572,8 @@ namespace Track_ShuttleRun
                     startInventoryTime = DateTime.Now;
                     dispatcherTimer.Start();
                     readratePerSecond.Start();
+                    showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));
+                    PlaySoundStart();
                 }
                 catch (Exception ex)
                 {
@@ -5898,18 +5933,26 @@ namespace Track_ShuttleRun
                         string CekTrack = (cek_track.Rows[0]["no_track"].ToString());
                         if (Track == CekTrack)
                         {
+                        
 
-                            string CariHistoryAntena = "select * from history_track where barcode='" + id_barcode + "' order by id DESC limit 1";
+                        string CariHistoryAntena = "select * from history_track where barcode='" + id_barcode + "' order by id DESC limit 1";
                             DataTable Cek_History = new Connect().getTable(CariHistoryAntena);
 
                             if (Cek_History.Rows.Count > 0)
                             {
                                 int HistoryAntena = int.Parse(Cek_History.Rows[0]["antena"].ToString());
+                                
                                 if (antena == HistoryAntena + 1)
                                 {
-                                    string InsertHistory = "insert into history_track (no_track,barcode,antena,no_rfid,waktu) values('" + Track + "','"+ id_barcode +"','" + antena + "' , '" + epc + "','" + waktu + "')";
-                                    new Connect().execute(InsertHistory);
 
+                       
+
+                                /*string InsertHistory = "insert into history_track (no_track,barcode,antena,no_rfid,waktu) values('" + Track + "','"+ id_barcode +"','" + antena + "' , '" + epc + "','" + waktu + "')";
+                                new Connect().execute(InsertHistory);*/
+
+                                string InsertHistory = "insert into history_track(no_track,barcode,antena,no_rfid,waktu) values('"+ Track +"','"+id_barcode+"','"+antena.ToString()+"','"+epc+"','"+waktu+"')";
+                                bool ok = new Connect().execute(InsertHistory);
+                                   
                                     stopwatch.Start();
                                     timer1.Start();
 
@@ -5923,7 +5966,7 @@ namespace Track_ShuttleRun
                                             string Putaran1 = (history.Rows[0]["putaran1"].ToString());
                                             string Putaran2 = (history.Rows[0]["putaran2"].ToString());
                                             string Putaran3 = (history.Rows[0]["putaran3"].ToString());
-                                            if (Putaran1 == "0")
+                                            if (Putaran1 == "0")    
                                             {
                                                 string UpdateWaktu = "update history set putaran1 = '" + waktu + "' where barcode = '" + id_barcode + "'";
                                                 new Connect().execute(UpdateWaktu);
@@ -5967,7 +6010,7 @@ namespace Track_ShuttleRun
                                                 new Connect().execute(UpdateAkhir);
                                                 //MessageBox.Show("Selesai");
                                                 Label_JumlahPutaran.Text = "3";
-                                                PlaySoundCounter();
+                                                
 
                                                 string History3 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                                 DataTable history3 = new Connect().getTable(History3);
@@ -5976,17 +6019,18 @@ namespace Track_ShuttleRun
                                                 Label_Putaran3.Text = waktu;
                                                 stopwatch.Stop();
                                                 timer1.Stop();
+                                                PlaySoundFinish();
 
 
-                                                
                                                 postDataNilai(waktu,Label_NoPeserta.Text);
-
-                                           
+                                                
 
                                                 btnInventory.PerformClick();
                                                 btnInventory.Enabled = false;
                                                 btnConnect.PerformClick();
                                                 btnConnect.Enabled = false;
+
+                                                
 
                                                 btn_Ulangi.Show();
 
@@ -6013,8 +6057,8 @@ namespace Track_ShuttleRun
                                 //new Connect().execute(InsertHistory);
 
                                 //MessageBox.Show ("Salah");
-                                    showMessage("Salah",Color.FromArgb(243, 246, 249));
-                                    PlaySoundWrongTrack();
+                                   // showMessage("Salah",Color.FromArgb(243, 246, 249));
+                                    /*PlaySoundWrongTrack();*/
                                     //this.Close();
                                 }
                             }
@@ -6117,7 +6161,7 @@ namespace Track_ShuttleRun
             {
                 { "pesertaid", pesertaid },
                 { "waktu", waktu },                
-                { "namatestot",NamaTestor},
+                { "namatestor",nama_testor},
                 { "subjenis_test", "SHUTTLE RUN" }
             };
 
@@ -6621,15 +6665,28 @@ namespace Track_ShuttleRun
         public void PlaySoundStart()
         {
             var myPlayer = new System.Media.SoundPlayer();
-            myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+           // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir+@"\Sound\countdown shuttle run.wav";
             myPlayer.Play();
 
+        }
+
+        public void PlaySoundFinish()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Finish.wav";
+            myPlayer.Play();
         }
 
         public void PlaySoundCounter()
         {
             var myPlayer = new System.Media.SoundPlayer();
-            myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\counting shuttle run.wav";
+            string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\counting shuttle run.wav";
             myPlayer.Play();
 
         }
