@@ -337,8 +337,8 @@ namespace Track_ShuttleRun
             if (passedInArgs.Length > 1)
             {                
                 id_testor = passedInArgs[1];
-                seleksiID = passedInArgs[2];
-                nama_testor = passedInArgs[3];
+                nama_testor = passedInArgs[2];
+                seleksiID = passedInArgs[3];
                 //MessageBox.Show(nama_testor);
             }
 
