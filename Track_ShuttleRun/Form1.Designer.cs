@@ -8062,7 +8062,7 @@ namespace Track_ShuttleRun
             this.btn_Reload.Name = "btn_Reload";
             this.btn_Reload.Size = new System.Drawing.Size(199, 92);
             this.btn_Reload.TabIndex = 58;
-            this.btn_Reload.Text = "Reload";
+            this.btn_Reload.Text = "NEXT";
             this.btn_Reload.UseVisualStyleBackColor = true;
             this.btn_Reload.Click += new System.EventHandler(this.button1_Click_1);
             // 
