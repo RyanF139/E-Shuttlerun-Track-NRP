@@ -8103,7 +8103,7 @@ namespace Track_ShuttleRun
             this.btnInventory.TabIndex = 55;
             this.btnInventory.Text = "Start";
             this.btnInventory.UseVisualStyleBackColor = false;
-            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click_1);
+            this.btnInventory.Click += new System.EventHandler(this.btnStartSound);
             // 
             // LabelNotif
             // 

@@ -19,6 +19,7 @@ using System.Globalization;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Threading.Tasks;
 
 namespace Track_ShuttleRun
 {
@@ -1585,6 +1586,7 @@ namespace Track_ShuttleRun
                 //btnInventory.Enabled = true;
                 btnConnect.Enabled = true;
                 ConnectReader();
+                btnInventory_Click_1(sender,e);
                
                 
 
@@ -1597,6 +1599,33 @@ namespace Track_ShuttleRun
 
                 DisconnectReader();
             }
+        }
+
+        private bool btnisstartSound = false;
+        private void btnStartSound(object sender , EventArgs e)
+        {
+            if (!btnisstartSound)
+            {
+                btnInventory.BackColor = Color.WhiteSmoke;
+                btnInventory.ForeColor = Color.DarkBlue;
+                btnInventory.Text = "STOP";
+                PlaySoundStart();
+                btnisstartSound = true;
+            }
+            else
+            {
+                btnInventory.BackColor = Color.WhiteSmoke;
+                btnInventory.ForeColor = Color.DarkBlue;
+                btnInventory.Text = "START";
+                stopwatch.Stop();
+                timer1.Stop();
+                btnisstartSound = false;
+                btn_Reload.Enabled = true;
+                btnConnect.PerformClick();
+                btn_Ulangi.Show();
+            }
+            
+
         }
 
         private void DisconnectReader()
@@ -4516,9 +4545,9 @@ namespace Track_ShuttleRun
                 {
                     //MessageBox.Show("Please select at least one antenna to poll at least once and repeat at least once.");
                     MessageBox.Show("Please 'Connect' before 'Start'");
-                    btnInventory.BackColor = Color.WhiteSmoke;
+                    /*btnInventory.BackColor = Color.WhiteSmoke;
                     btnInventory.ForeColor = Color.DarkBlue;
-                    btnInventory.Text = FindResource("StartInventory");
+                    btnInventory.Text = FindResource("StartInventory");*/
                     return;
                 }
 
@@ -4530,9 +4559,9 @@ namespace Track_ShuttleRun
                         return;
                     }
 
-                    btnInventory.BackColor = Color.DarkBlue;
+                    /*btnInventory.BackColor = Color.DarkBlue;
                     btnInventory.ForeColor = Color.White;
-                    btnInventory.Text = FindResource("StopInventory");
+                    btnInventory.Text = FindResource("StopInventory");*/
 
                     isFastInv = true;
                     doingFastInv = true;
@@ -4572,8 +4601,7 @@ namespace Track_ShuttleRun
                     startInventoryTime = DateTime.Now;
                     dispatcherTimer.Start();
                     readratePerSecond.Start();
-                    showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));
-                    PlaySoundStart();
+                    showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));                    
                 }
                 catch (Exception ex)
                 {
@@ -4590,7 +4618,7 @@ namespace Track_ShuttleRun
                 }
             }
         }
-
+            
         private void SetInvStopingStatus()
         {
             btnInventory.BackColor = Color.LightBlue;
@@ -5945,18 +5973,15 @@ namespace Track_ShuttleRun
                                 if (antena == HistoryAntena + 1)
                                 {
 
-                       
-
-                                /*string InsertHistory = "insert into history_track (no_track,barcode,antena,no_rfid,waktu) values('" + Track + "','"+ id_barcode +"','" + antena + "' , '" + epc + "','" + waktu + "')";
-                                new Connect().execute(InsertHistory);*/
-
-                                string InsertHistory = "insert into history_track(no_track,barcode,antena,no_rfid,waktu) values('"+ Track +"','"+id_barcode+"','"+antena.ToString()+"','"+epc+"','"+waktu+"')";
-                                bool ok = new Connect().execute(InsertHistory);
-                                   
+                                if (isStartTime)
+                                {
+                                    string InsertHistory = "insert into history_track (no_track,barcode,antena,no_rfid,waktu) values('" + Track + "','" + id_barcode + "','" + antena + "' , '" + epc + "','" + waktu + "')";
+                                    new Connect().execute(InsertHistory);
                                     stopwatch.Start();
                                     timer1.Start();
+                                }
 
-                                    if (antena == 4 && HistoryAntena == 3)
+                                if (antena == 4 && HistoryAntena == 3)
                                     {
                                         string History = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                         DataTable history = new Connect().getTable(History);
@@ -6662,13 +6687,18 @@ namespace Track_ShuttleRun
             }
         }
 
-        public void PlaySoundStart()
+
+        public bool isStartTime = false;
+        public async void PlaySoundStart()
         {
+            isStartTime = false;
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
             myPlayer.SoundLocation = dir+@"\Sound\countdown shuttle run.wav";
             myPlayer.Play();
+            await Task.Delay(4000);
+            isStartTime = true;
 
         }
 
@@ -6701,14 +6731,15 @@ namespace Track_ShuttleRun
 
         private void btnInventory_Click_1(object sender, EventArgs e)
         {
-           
-            
+            showMessage("Track Siap !!", Color.FromArgb(243, 246, 249));
+            btn_Reload.Enabled = false;
             stopwatch.Stop();
             timer1.Stop();
             if (radio_btn_fast_inv.Checked)
             {
                 //stopwatch.Start();
-                FastInventory_Click(sender, e);                
+
+                FastInventory_Click(sender, e);
             }
             else if (radio_btn_realtime_inv.Checked)
             {
