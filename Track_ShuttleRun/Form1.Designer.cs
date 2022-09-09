@@ -663,6 +663,8 @@ namespace Track_ShuttleRun
             this.label90 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.btnStartKanan = new System.Windows.Forms.Button();
+            this.btn_StartKiri = new System.Windows.Forms.Button();
             this.textBarId = new System.Windows.Forms.TextBox();
             this.lblTestor = new System.Windows.Forms.Label();
             this.icon_Male = new System.Windows.Forms.PictureBox();
@@ -676,8 +678,8 @@ namespace Track_ShuttleRun
             this.ckDisplayLog = new System.Windows.Forms.CheckBox();
             this.label35 = new System.Windows.Forms.Label();
             this.Label_No_ShuttleRun = new System.Windows.Forms.Label();
-            this.lblJabatan = new System.Windows.Forms.Label();
-            this.lblNRP = new System.Windows.Forms.Label();
+            this.lblAsalSekolah = new System.Windows.Forms.Label();
+            this.lblNOPJurusan = new System.Windows.Forms.Label();
             this.lblNama = new System.Windows.Forms.Label();
             this.btnReconnect = new System.Windows.Forms.Button();
             this.btn_Reload = new System.Windows.Forms.Button();
@@ -849,7 +851,7 @@ namespace Track_ShuttleRun
             this.tabCtrMain.Location = new System.Drawing.Point(4, -1);
             this.tabCtrMain.Name = "tabCtrMain";
             this.tabCtrMain.SelectedIndex = 0;
-            this.tabCtrMain.Size = new System.Drawing.Size(1570, 666);
+            this.tabCtrMain.Size = new System.Drawing.Size(1570, 741);
             this.tabCtrMain.TabIndex = 0;
             this.tabCtrMain.SelectedIndexChanged += new System.EventHandler(this.tabCtrMain_SelectedIndexChanged);
             this.tabCtrMain.Click += new System.EventHandler(this.tabCtrMain_Click);
@@ -861,7 +863,7 @@ namespace Track_ShuttleRun
             this.PagReaderSetting.Location = new System.Drawing.Point(4, 22);
             this.PagReaderSetting.Name = "PagReaderSetting";
             this.PagReaderSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.PagReaderSetting.Size = new System.Drawing.Size(1562, 640);
+            this.PagReaderSetting.Size = new System.Drawing.Size(1562, 715);
             this.PagReaderSetting.TabIndex = 0;
             this.PagReaderSetting.Text = "Reader Setup";
             // 
@@ -873,7 +875,7 @@ namespace Track_ShuttleRun
             this.tabControl_baseSettings.Location = new System.Drawing.Point(3, 3);
             this.tabControl_baseSettings.Name = "tabControl_baseSettings";
             this.tabControl_baseSettings.SelectedIndex = 0;
-            this.tabControl_baseSettings.Size = new System.Drawing.Size(1556, 634);
+            this.tabControl_baseSettings.Size = new System.Drawing.Size(1556, 709);
             this.tabControl_baseSettings.TabIndex = 15;
             // 
             // tabPage1
@@ -889,7 +891,7 @@ namespace Track_ShuttleRun
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1548, 608);
+            this.tabPage1.Size = new System.Drawing.Size(1548, 683);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Basic Setup";
             // 
@@ -1683,7 +1685,7 @@ namespace Track_ShuttleRun
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1548, 608);
+            this.tabPage2.Size = new System.Drawing.Size(1548, 683);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "RF Setup";
             // 
@@ -2830,7 +2832,7 @@ namespace Track_ShuttleRun
             this.pageEpcTest.ForeColor = System.Drawing.SystemColors.Desktop;
             this.pageEpcTest.Location = new System.Drawing.Point(4, 22);
             this.pageEpcTest.Name = "pageEpcTest";
-            this.pageEpcTest.Size = new System.Drawing.Size(1562, 640);
+            this.pageEpcTest.Size = new System.Drawing.Size(1562, 715);
             this.pageEpcTest.TabIndex = 5;
             this.pageEpcTest.Text = "18000-6C Tag Test";
             // 
@@ -2844,7 +2846,7 @@ namespace Track_ShuttleRun
             this.tab_6c_Tags_Test.Location = new System.Drawing.Point(0, 0);
             this.tab_6c_Tags_Test.Name = "tab_6c_Tags_Test";
             this.tab_6c_Tags_Test.SelectedIndex = 0;
-            this.tab_6c_Tags_Test.Size = new System.Drawing.Size(1560, 638);
+            this.tab_6c_Tags_Test.Size = new System.Drawing.Size(1560, 713);
             this.tab_6c_Tags_Test.TabIndex = 0;
             this.tab_6c_Tags_Test.TabStop = false;
             // 
@@ -2859,7 +2861,7 @@ namespace Track_ShuttleRun
             this.pageFast4AntMode.Location = new System.Drawing.Point(4, 22);
             this.pageFast4AntMode.Name = "pageFast4AntMode";
             this.pageFast4AntMode.Padding = new System.Windows.Forms.Padding(3);
-            this.pageFast4AntMode.Size = new System.Drawing.Size(1552, 612);
+            this.pageFast4AntMode.Size = new System.Drawing.Size(1552, 687);
             this.pageFast4AntMode.TabIndex = 0;
             this.pageFast4AntMode.Text = "Inventory";
             this.pageFast4AntMode.Enter += new System.EventHandler(this.pageFast4AntMode_Enter);
@@ -2891,7 +2893,7 @@ namespace Track_ShuttleRun
             this.flowLayoutPanel1.Controls.Add(this.groupBox29);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(11, 181);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(332, 420);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(332, 495);
             this.flowLayoutPanel1.TabIndex = 84;
             // 
             // grb_cache_inv
@@ -4052,7 +4054,7 @@ namespace Track_ShuttleRun
             this.groupBox26.Controls.Add(this.txtFastMaxRssi);
             this.groupBox26.Location = new System.Drawing.Point(349, 144);
             this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Size = new System.Drawing.Size(1197, 457);
+            this.groupBox26.Size = new System.Drawing.Size(1197, 532);
             this.groupBox26.TabIndex = 86;
             this.groupBox26.TabStop = false;
             this.groupBox26.Text = "Result";
@@ -4125,7 +4127,7 @@ namespace Track_ShuttleRun
             this.dgv_fast_inv_tags.Location = new System.Drawing.Point(6, 42);
             this.dgv_fast_inv_tags.Name = "dgv_fast_inv_tags";
             this.dgv_fast_inv_tags.RowTemplate.Height = 23;
-            this.dgv_fast_inv_tags.Size = new System.Drawing.Size(1200, 409);
+            this.dgv_fast_inv_tags.Size = new System.Drawing.Size(1200, 484);
             this.dgv_fast_inv_tags.TabIndex = 66;
             // 
             // SerialNumber_fast_inv
@@ -4563,7 +4565,7 @@ namespace Track_ShuttleRun
             this.pageAcessTag.Controls.Add(this.gbCmdOperateTag);
             this.pageAcessTag.Location = new System.Drawing.Point(4, 22);
             this.pageAcessTag.Name = "pageAcessTag";
-            this.pageAcessTag.Size = new System.Drawing.Size(1552, 612);
+            this.pageAcessTag.Size = new System.Drawing.Size(1552, 687);
             this.pageAcessTag.TabIndex = 3;
             this.pageAcessTag.Text = "Tag Operation";
             this.pageAcessTag.UseVisualStyleBackColor = true;
@@ -4576,7 +4578,7 @@ namespace Track_ShuttleRun
             this.panel13.Controls.Add(this.dgvTagOp);
             this.panel13.Location = new System.Drawing.Point(4, 321);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1545, 288);
+            this.panel13.Size = new System.Drawing.Size(1545, 363);
             this.panel13.TabIndex = 10;
             // 
             // dgvTagOp
@@ -4597,7 +4599,7 @@ namespace Track_ShuttleRun
             this.dgvTagOp.Location = new System.Drawing.Point(0, 0);
             this.dgvTagOp.Name = "dgvTagOp";
             this.dgvTagOp.RowTemplate.Height = 23;
-            this.dgvTagOp.Size = new System.Drawing.Size(1545, 288);
+            this.dgvTagOp.Size = new System.Drawing.Size(1545, 363);
             this.dgvTagOp.TabIndex = 9;
             // 
             // tagOp_SerialNumberColumn
@@ -5172,7 +5174,7 @@ namespace Track_ShuttleRun
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1552, 612);
+            this.tabPage3.Size = new System.Drawing.Size(1552, 687);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Set Tag Mask";
             // 
@@ -5184,7 +5186,7 @@ namespace Track_ShuttleRun
             this.panel14.Controls.Add(this.dgvTagMask);
             this.panel14.Location = new System.Drawing.Point(6, 258);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1540, 348);
+            this.panel14.Size = new System.Drawing.Size(1540, 423);
             this.panel14.TabIndex = 31;
             // 
             // dgvTagMask
@@ -5519,7 +5521,7 @@ namespace Track_ShuttleRun
             this.PagISO18000.Controls.Add(this.panel2);
             this.PagISO18000.Location = new System.Drawing.Point(4, 22);
             this.PagISO18000.Name = "PagISO18000";
-            this.PagISO18000.Size = new System.Drawing.Size(1562, 640);
+            this.PagISO18000.Size = new System.Drawing.Size(1562, 715);
             this.PagISO18000.TabIndex = 4;
             this.PagISO18000.Text = "ISO 18000-6B Tag Test";
             // 
@@ -5532,7 +5534,7 @@ namespace Track_ShuttleRun
             this.panel8.Controls.Add(this.panel5);
             this.panel8.Location = new System.Drawing.Point(5, 6);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1009, 631);
+            this.panel8.Size = new System.Drawing.Size(1009, 706);
             this.panel8.TabIndex = 17;
             // 
             // panel4
@@ -5564,7 +5566,7 @@ namespace Track_ShuttleRun
             this.panel5.Controls.Add(this.ltvTagISO18000);
             this.panel5.Location = new System.Drawing.Point(3, 59);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1003, 569);
+            this.panel5.Size = new System.Drawing.Size(1003, 644);
             this.panel5.TabIndex = 16;
             // 
             // ltvTagISO18000
@@ -5581,7 +5583,7 @@ namespace Track_ShuttleRun
             this.ltvTagISO18000.HideSelection = false;
             this.ltvTagISO18000.Location = new System.Drawing.Point(0, 0);
             this.ltvTagISO18000.Name = "ltvTagISO18000";
-            this.ltvTagISO18000.Size = new System.Drawing.Size(1003, 569);
+            this.ltvTagISO18000.Size = new System.Drawing.Size(1003, 644);
             this.ltvTagISO18000.TabIndex = 9;
             this.ltvTagISO18000.UseCompatibleStateImageBehavior = false;
             this.ltvTagISO18000.View = System.Windows.Forms.View.Details;
@@ -5621,7 +5623,7 @@ namespace Track_ShuttleRun
             this.panel2.Controls.Add(this.gbISO1800LockQuery);
             this.panel2.Location = new System.Drawing.Point(1020, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(534, 634);
+            this.panel2.Size = new System.Drawing.Size(534, 709);
             this.panel2.TabIndex = 11;
             // 
             // label41
@@ -5949,7 +5951,7 @@ namespace Track_ShuttleRun
             this.PagTranDataLog.Controls.Add(this.panel3);
             this.PagTranDataLog.Location = new System.Drawing.Point(4, 22);
             this.PagTranDataLog.Name = "PagTranDataLog";
-            this.PagTranDataLog.Size = new System.Drawing.Size(1562, 640);
+            this.PagTranDataLog.Size = new System.Drawing.Size(1562, 715);
             this.PagTranDataLog.TabIndex = 2;
             this.PagTranDataLog.Text = "Serial Port Monitor";
             this.PagTranDataLog.UseVisualStyleBackColor = true;
@@ -5962,7 +5964,7 @@ namespace Track_ShuttleRun
             this.panel9.Controls.Add(this.lrtxtDataTran);
             this.panel9.Location = new System.Drawing.Point(5, 3);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1554, 565);
+            this.panel9.Size = new System.Drawing.Size(1554, 640);
             this.panel9.TabIndex = 12;
             // 
             // lrtxtDataTran
@@ -5970,7 +5972,7 @@ namespace Track_ShuttleRun
             this.lrtxtDataTran.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lrtxtDataTran.Location = new System.Drawing.Point(0, 0);
             this.lrtxtDataTran.Name = "lrtxtDataTran";
-            this.lrtxtDataTran.Size = new System.Drawing.Size(1554, 565);
+            this.lrtxtDataTran.Size = new System.Drawing.Size(1554, 640);
             this.lrtxtDataTran.TabIndex = 0;
             this.lrtxtDataTran.Text = "";
             this.lrtxtDataTran.DoubleClick += new System.EventHandler(this.lrtxtDataTran_DoubleClick);
@@ -5986,7 +5988,7 @@ namespace Track_ShuttleRun
             this.panel3.Controls.Add(this.htxtCheckData);
             this.panel3.Controls.Add(this.label17);
             this.panel3.Controls.Add(this.btnSendData);
-            this.panel3.Location = new System.Drawing.Point(5, 574);
+            this.panel3.Location = new System.Drawing.Point(5, 649);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1554, 63);
             this.panel3.TabIndex = 11;
@@ -6070,7 +6072,7 @@ namespace Track_ShuttleRun
             this.net_configure_tabPage.Location = new System.Drawing.Point(4, 22);
             this.net_configure_tabPage.Name = "net_configure_tabPage";
             this.net_configure_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.net_configure_tabPage.Size = new System.Drawing.Size(1562, 640);
+            this.net_configure_tabPage.Size = new System.Drawing.Size(1562, 715);
             this.net_configure_tabPage.TabIndex = 6;
             this.net_configure_tabPage.Text = "NetPort Setup";
             this.net_configure_tabPage.UseVisualStyleBackColor = true;
@@ -7014,7 +7016,7 @@ namespace Track_ShuttleRun
             this.sensorTags_tabPage.Location = new System.Drawing.Point(4, 22);
             this.sensorTags_tabPage.Name = "sensorTags_tabPage";
             this.sensorTags_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.sensorTags_tabPage.Size = new System.Drawing.Size(1562, 640);
+            this.sensorTags_tabPage.Size = new System.Drawing.Size(1562, 715);
             this.sensorTags_tabPage.TabIndex = 8;
             this.sensorTags_tabPage.Text = "Sensor Tags";
             this.sensorTags_tabPage.UseVisualStyleBackColor = true;
@@ -7270,7 +7272,7 @@ namespace Track_ShuttleRun
             this.panel10.Controls.Add(this.johar_tag_dgv);
             this.panel10.Location = new System.Drawing.Point(265, 10);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1291, 624);
+            this.panel10.Size = new System.Drawing.Size(1291, 699);
             this.panel10.TabIndex = 15;
             // 
             // panel12
@@ -7335,7 +7337,7 @@ namespace Track_ShuttleRun
             this.johar_tag_dgv.Location = new System.Drawing.Point(5, 46);
             this.johar_tag_dgv.Name = "johar_tag_dgv";
             this.johar_tag_dgv.RowTemplate.Height = 23;
-            this.johar_tag_dgv.Size = new System.Drawing.Size(1283, 575);
+            this.johar_tag_dgv.Size = new System.Drawing.Size(1283, 650);
             this.johar_tag_dgv.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -7822,6 +7824,8 @@ namespace Track_ShuttleRun
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
+            this.panel15.Controls.Add(this.btnStartKanan);
+            this.panel15.Controls.Add(this.btn_StartKiri);
             this.panel15.Controls.Add(this.textBarId);
             this.panel15.Controls.Add(this.lblTestor);
             this.panel15.Controls.Add(this.icon_Male);
@@ -7831,8 +7835,8 @@ namespace Track_ShuttleRun
             this.panel15.Controls.Add(this.btn_Ulangi);
             this.panel15.Controls.Add(this.panel1);
             this.panel15.Controls.Add(this.Label_No_ShuttleRun);
-            this.panel15.Controls.Add(this.lblJabatan);
-            this.panel15.Controls.Add(this.lblNRP);
+            this.panel15.Controls.Add(this.lblAsalSekolah);
+            this.panel15.Controls.Add(this.lblNOPJurusan);
             this.panel15.Controls.Add(this.lblNama);
             this.panel15.Controls.Add(this.btnReconnect);
             this.panel15.Controls.Add(this.btn_Reload);
@@ -7850,9 +7854,39 @@ namespace Track_ShuttleRun
             this.panel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1570, 825);
+            this.panel15.Size = new System.Drawing.Size(1570, 900);
             this.panel15.TabIndex = 20;
             this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
+            // 
+            // btnStartKanan
+            // 
+            this.btnStartKanan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(96)))), ((int)(((byte)(205)))));
+            this.btnStartKanan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStartKanan.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartKanan.ForeColor = System.Drawing.Color.White;
+            this.btnStartKanan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnStartKanan.Location = new System.Drawing.Point(562, 739);
+            this.btnStartKanan.Name = "btnStartKanan";
+            this.btnStartKanan.Size = new System.Drawing.Size(179, 50);
+            this.btnStartKanan.TabIndex = 75;
+            this.btnStartKanan.Text = "Kanan";
+            this.btnStartKanan.UseVisualStyleBackColor = false;
+            this.btnStartKanan.Click += new System.EventHandler(this.btnStartKanan_Click);
+            // 
+            // btn_StartKiri
+            // 
+            this.btn_StartKiri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(96)))), ((int)(((byte)(205)))));
+            this.btn_StartKiri.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_StartKiri.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_StartKiri.ForeColor = System.Drawing.Color.White;
+            this.btn_StartKiri.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_StartKiri.Location = new System.Drawing.Point(342, 739);
+            this.btn_StartKiri.Name = "btn_StartKiri";
+            this.btn_StartKiri.Size = new System.Drawing.Size(179, 50);
+            this.btn_StartKiri.TabIndex = 74;
+            this.btn_StartKiri.Text = "Kiri";
+            this.btn_StartKiri.UseVisualStyleBackColor = false;
+            this.btn_StartKiri.Click += new System.EventHandler(this.btn_StartKiri_Click);
             // 
             // textBarId
             // 
@@ -7940,7 +7974,7 @@ namespace Track_ShuttleRun
             this.panel1.Controls.Add(this.lrtxtLog);
             this.panel1.Controls.Add(this.ckDisplayLog);
             this.panel1.Controls.Add(this.label35);
-            this.panel1.Location = new System.Drawing.Point(120, 754);
+            this.panel1.Location = new System.Drawing.Point(123, 823);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(633, 65);
             this.panel1.TabIndex = 66;
@@ -7996,36 +8030,37 @@ namespace Track_ShuttleRun
             this.Label_No_ShuttleRun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.Label_No_ShuttleRun.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_No_ShuttleRun.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_No_ShuttleRun.Location = new System.Drawing.Point(294, 55);
+            this.Label_No_ShuttleRun.Location = new System.Drawing.Point(311, 35);
             this.Label_No_ShuttleRun.Name = "Label_No_ShuttleRun";
             this.Label_No_ShuttleRun.Size = new System.Drawing.Size(306, 56);
             this.Label_No_ShuttleRun.TabIndex = 65;
             this.Label_No_ShuttleRun.Text = "Shuttle_Run";
+            this.Label_No_ShuttleRun.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblJabatan
+            // lblAsalSekolah
             // 
-            this.lblJabatan.AutoSize = true;
-            this.lblJabatan.BackColor = System.Drawing.Color.White;
-            this.lblJabatan.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJabatan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblJabatan.Location = new System.Drawing.Point(888, 448);
-            this.lblJabatan.Name = "lblJabatan";
-            this.lblJabatan.Size = new System.Drawing.Size(83, 29);
-            this.lblJabatan.TabIndex = 63;
-            this.lblJabatan.Text = "Jabatan";
-            this.lblJabatan.Click += new System.EventHandler(this.lblPangkat_Click);
+            this.lblAsalSekolah.AutoSize = true;
+            this.lblAsalSekolah.BackColor = System.Drawing.Color.White;
+            this.lblAsalSekolah.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAsalSekolah.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblAsalSekolah.Location = new System.Drawing.Point(888, 448);
+            this.lblAsalSekolah.Name = "lblAsalSekolah";
+            this.lblAsalSekolah.Size = new System.Drawing.Size(127, 29);
+            this.lblAsalSekolah.TabIndex = 63;
+            this.lblAsalSekolah.Text = "Asal Sekolah";
+            this.lblAsalSekolah.Click += new System.EventHandler(this.lblPangkat_Click);
             // 
-            // lblNRP
+            // lblNOPJurusan
             // 
-            this.lblNRP.AutoSize = true;
-            this.lblNRP.BackColor = System.Drawing.Color.White;
-            this.lblNRP.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNRP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNRP.Location = new System.Drawing.Point(1032, 241);
-            this.lblNRP.Name = "lblNRP";
-            this.lblNRP.Size = new System.Drawing.Size(86, 20);
-            this.lblNRP.TabIndex = 62;
-            this.lblNRP.Text = "NRP/KORPS";
+            this.lblNOPJurusan.AutoSize = true;
+            this.lblNOPJurusan.BackColor = System.Drawing.Color.White;
+            this.lblNOPJurusan.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNOPJurusan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblNOPJurusan.Location = new System.Drawing.Point(1032, 241);
+            this.lblNOPJurusan.Name = "lblNOPJurusan";
+            this.lblNOPJurusan.Size = new System.Drawing.Size(87, 20);
+            this.lblNOPJurusan.TabIndex = 62;
+            this.lblNOPJurusan.Text = "NOP/Jurusan";
             // 
             // lblNama
             // 
@@ -8072,7 +8107,7 @@ namespace Track_ShuttleRun
             this.Label_Timer.Font = new System.Drawing.Font("Arial Narrow", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Timer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_Timer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_Timer.Location = new System.Drawing.Point(353, 432);
+            this.Label_Timer.Location = new System.Drawing.Point(353, 398);
             this.Label_Timer.Name = "Label_Timer";
             this.Label_Timer.Size = new System.Drawing.Size(249, 110);
             this.Label_Timer.TabIndex = 19;
@@ -8122,7 +8157,7 @@ namespace Track_ShuttleRun
             this.Label_Putaran3.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Putaran3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_Putaran3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_Putaran3.Location = new System.Drawing.Point(621, 671);
+            this.Label_Putaran3.Location = new System.Drawing.Point(627, 629);
             this.Label_Putaran3.Name = "Label_Putaran3";
             this.Label_Putaran3.Size = new System.Drawing.Size(126, 57);
             this.Label_Putaran3.TabIndex = 12;
@@ -8134,7 +8169,7 @@ namespace Track_ShuttleRun
             this.Label_Putaran2.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Putaran2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_Putaran2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_Putaran2.Location = new System.Drawing.Point(409, 671);
+            this.Label_Putaran2.Location = new System.Drawing.Point(408, 629);
             this.Label_Putaran2.Name = "Label_Putaran2";
             this.Label_Putaran2.Size = new System.Drawing.Size(126, 57);
             this.Label_Putaran2.TabIndex = 11;
@@ -8146,7 +8181,7 @@ namespace Track_ShuttleRun
             this.Label_Putaran1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Putaran1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_Putaran1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_Putaran1.Location = new System.Drawing.Point(196, 671);
+            this.Label_Putaran1.Location = new System.Drawing.Point(201, 629);
             this.Label_Putaran1.Name = "Label_Putaran1";
             this.Label_Putaran1.Size = new System.Drawing.Size(126, 57);
             this.Label_Putaran1.TabIndex = 10;
@@ -8158,7 +8193,7 @@ namespace Track_ShuttleRun
             this.Label_JumlahPutaran.Font = new System.Drawing.Font("Arial Narrow", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_JumlahPutaran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_JumlahPutaran.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_JumlahPutaran.Location = new System.Drawing.Point(579, 204);
+            this.Label_JumlahPutaran.Location = new System.Drawing.Point(581, 167);
             this.Label_JumlahPutaran.Name = "Label_JumlahPutaran";
             this.Label_JumlahPutaran.Size = new System.Drawing.Size(148, 94);
             this.Label_JumlahPutaran.TabIndex = 8;
@@ -8171,7 +8206,7 @@ namespace Track_ShuttleRun
             this.Label_NoPeserta.Font = new System.Drawing.Font("Arial Narrow", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_NoPeserta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_NoPeserta.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_NoPeserta.Location = new System.Drawing.Point(247, 204);
+            this.Label_NoPeserta.Location = new System.Drawing.Point(244, 170);
             this.Label_NoPeserta.Name = "Label_NoPeserta";
             this.Label_NoPeserta.Size = new System.Drawing.Size(148, 94);
             this.Label_NoPeserta.TabIndex = 7;
@@ -8305,7 +8340,7 @@ namespace Track_ShuttleRun
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1570, 825);
+            this.ClientSize = new System.Drawing.Size(1570, 900);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.tabCtrMain);
             this.ForeColor = System.Drawing.Color.Black;
@@ -9183,8 +9218,8 @@ namespace Track_ShuttleRun
         private Button btn_Reload;
         private Button btnReconnect;
         private Label lblNama;
-        private Label lblJabatan;
-        private Label lblNRP;
+        private Label lblAsalSekolah;
+        private Label lblNOPJurusan;
         private Label Label_No_ShuttleRun;
         private Panel panel1;
         private CheckBox ckClearOperationRec;
@@ -9198,6 +9233,8 @@ namespace Track_ShuttleRun
         private CustomControl.LogRichTextBox lrtxtLog;
         private Label lblTestor;
         private TextBox textBarId;
+        private Button btn_StartKiri;
+        private Button btnStartKanan;
     }
 }
 
