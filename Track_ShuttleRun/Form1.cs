@@ -6049,7 +6049,7 @@ namespace Track_ShuttleRun
 
                                                 showMessage("Putaran 1", Color.FromArgb(243, 246, 249));
                                                 Label_JumlahPutaran.Text = "1";
-                                                PlaySoundCounter();
+                                                PlaySoundPutaran1();
 
 
                                                 string History1 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
@@ -6064,7 +6064,7 @@ namespace Track_ShuttleRun
 
                                                 showMessage("Putaran 2", Color.FromArgb(243, 246, 249));
                                                 Label_JumlahPutaran.Text = "2";
-                                                PlaySoundCounter();
+                                                PlaySoundPutaran2();
 
                                                 string History2 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                                 DataTable history2 = new Connect().getTable(History2);
@@ -6095,7 +6095,7 @@ namespace Track_ShuttleRun
                                                 Label_Putaran3.Text = waktu;
                                                 stopwatch.Stop();
                                                 timer1.Stop();
-                                                PlaySoundFinish();
+                                                PlaySoundPutaran3();
 
 
                                                 postDataNilai(waktu, Label_NoPeserta.Text);
@@ -6193,7 +6193,7 @@ namespace Track_ShuttleRun
 
                                                 showMessage("Putaran 1", Color.FromArgb(243, 246, 249));
                                                 Label_JumlahPutaran.Text = "1";
-                                                PlaySoundCounter();
+                                                PlaySoundPutaran1();
 
 
                                                 string History1 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
@@ -6208,7 +6208,7 @@ namespace Track_ShuttleRun
 
                                                 showMessage("Putaran 2", Color.FromArgb(243, 246, 249));
                                                 Label_JumlahPutaran.Text = "2";
-                                                PlaySoundCounter();
+                                                PlaySoundPutaran2();
 
                                                 string History2 = "select * from history where barcode='" + id_barcode + "' order by id DESC limit 1";
                                                 DataTable history2 = new Connect().getTable(History2);
@@ -6239,7 +6239,7 @@ namespace Track_ShuttleRun
                                                 Label_Putaran3.Text = waktu;
                                                 stopwatch.Stop();
                                                 timer1.Stop();
-                                                PlaySoundFinish();
+                                                PlaySoundPutaran3();
 
 
                                                 postDataNilai(waktu, Label_NoPeserta.Text);
@@ -6839,30 +6839,38 @@ namespace Track_ShuttleRun
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
-            myPlayer.SoundLocation = dir+@"\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir+@"\Sound\Start.wav";
             myPlayer.Play();
-            await Task.Delay(4000);
+            await Task.Delay(5000);
             isStartTime = true;
 
         }
 
-        public void PlaySoundFinish()
+        public void PlaySoundPutaran1()
         {
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
             // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
-            myPlayer.SoundLocation = dir + @"\Sound\Finish-1.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Putaran1.wav";
             myPlayer.Play();
         }
 
-        public void PlaySoundCounter()
+        public void PlaySoundPutaran2()
         {
             var myPlayer = new System.Media.SoundPlayer();
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
             // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
-            myPlayer.SoundLocation = dir + @"\Sound\counting shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Putaran2.wav";
             myPlayer.Play();
+        }
 
+        public void PlaySoundPutaran3()
+        {
+            var myPlayer = new System.Media.SoundPlayer();
+            string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
+            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
+            myPlayer.SoundLocation = dir + @"\Sound\Putaran3.wav";
+            myPlayer.Play();
         }
 
         public void PlaySoundWrongTrack()
