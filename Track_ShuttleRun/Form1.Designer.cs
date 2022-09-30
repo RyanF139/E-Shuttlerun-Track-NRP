@@ -851,7 +851,7 @@ namespace Track_ShuttleRun
             this.tabCtrMain.Location = new System.Drawing.Point(4, -1);
             this.tabCtrMain.Name = "tabCtrMain";
             this.tabCtrMain.SelectedIndex = 0;
-            this.tabCtrMain.Size = new System.Drawing.Size(1570, 741);
+            this.tabCtrMain.Size = new System.Drawing.Size(1570, 716);
             this.tabCtrMain.TabIndex = 0;
             this.tabCtrMain.SelectedIndexChanged += new System.EventHandler(this.tabCtrMain_SelectedIndexChanged);
             this.tabCtrMain.Click += new System.EventHandler(this.tabCtrMain_Click);
@@ -863,7 +863,7 @@ namespace Track_ShuttleRun
             this.PagReaderSetting.Location = new System.Drawing.Point(4, 22);
             this.PagReaderSetting.Name = "PagReaderSetting";
             this.PagReaderSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.PagReaderSetting.Size = new System.Drawing.Size(1562, 715);
+            this.PagReaderSetting.Size = new System.Drawing.Size(1562, 690);
             this.PagReaderSetting.TabIndex = 0;
             this.PagReaderSetting.Text = "Reader Setup";
             // 
@@ -875,7 +875,7 @@ namespace Track_ShuttleRun
             this.tabControl_baseSettings.Location = new System.Drawing.Point(3, 3);
             this.tabControl_baseSettings.Name = "tabControl_baseSettings";
             this.tabControl_baseSettings.SelectedIndex = 0;
-            this.tabControl_baseSettings.Size = new System.Drawing.Size(1556, 709);
+            this.tabControl_baseSettings.Size = new System.Drawing.Size(1556, 684);
             this.tabControl_baseSettings.TabIndex = 15;
             // 
             // tabPage1
@@ -891,7 +891,7 @@ namespace Track_ShuttleRun
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1548, 683);
+            this.tabPage1.Size = new System.Drawing.Size(1548, 658);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Basic Setup";
             // 
@@ -7854,7 +7854,7 @@ namespace Track_ShuttleRun
             this.panel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel15.Location = new System.Drawing.Point(0, 0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1570, 900);
+            this.panel15.Size = new System.Drawing.Size(1570, 875);
             this.panel15.TabIndex = 20;
             this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.panel15_Paint);
             // 
@@ -7865,7 +7865,7 @@ namespace Track_ShuttleRun
             this.btnStartKanan.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartKanan.ForeColor = System.Drawing.Color.White;
             this.btnStartKanan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnStartKanan.Location = new System.Drawing.Point(562, 739);
+            this.btnStartKanan.Location = new System.Drawing.Point(544, 716);
             this.btnStartKanan.Name = "btnStartKanan";
             this.btnStartKanan.Size = new System.Drawing.Size(179, 50);
             this.btnStartKanan.TabIndex = 75;
@@ -7880,7 +7880,7 @@ namespace Track_ShuttleRun
             this.btn_StartKiri.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_StartKiri.ForeColor = System.Drawing.Color.White;
             this.btn_StartKiri.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_StartKiri.Location = new System.Drawing.Point(342, 739);
+            this.btn_StartKiri.Location = new System.Drawing.Point(324, 716);
             this.btn_StartKiri.Name = "btn_StartKiri";
             this.btn_StartKiri.Size = new System.Drawing.Size(179, 50);
             this.btn_StartKiri.TabIndex = 74;
@@ -7892,7 +7892,7 @@ namespace Track_ShuttleRun
             // 
             this.textBarId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBarId.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBarId.Location = new System.Drawing.Point(897, 125);
+            this.textBarId.Location = new System.Drawing.Point(879, 102);
             this.textBarId.Multiline = true;
             this.textBarId.Name = "textBarId";
             this.textBarId.Size = new System.Drawing.Size(242, 34);
@@ -7905,7 +7905,7 @@ namespace Track_ShuttleRun
             this.lblTestor.BackColor = System.Drawing.Color.White;
             this.lblTestor.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTestor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTestor.Location = new System.Drawing.Point(888, 516);
+            this.lblTestor.Location = new System.Drawing.Point(870, 493);
             this.lblTestor.Name = "lblTestor";
             this.lblTestor.Size = new System.Drawing.Size(69, 29);
             this.lblTestor.TabIndex = 72;
@@ -7915,7 +7915,7 @@ namespace Track_ShuttleRun
             // 
             this.icon_Male.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(215)))), ((int)(((byte)(235)))));
             this.icon_Male.Image = ((System.Drawing.Image)(resources.GetObject("icon_Male.Image")));
-            this.icon_Male.Location = new System.Drawing.Point(1099, 287);
+            this.icon_Male.Location = new System.Drawing.Point(1081, 264);
             this.icon_Male.Name = "icon_Male";
             this.icon_Male.Size = new System.Drawing.Size(25, 25);
             this.icon_Male.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -7926,7 +7926,7 @@ namespace Track_ShuttleRun
             // 
             this.icon_Female.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(215)))), ((int)(((byte)(235)))));
             this.icon_Female.Image = ((System.Drawing.Image)(resources.GetObject("icon_Female.Image")));
-            this.icon_Female.Location = new System.Drawing.Point(1099, 287);
+            this.icon_Female.Location = new System.Drawing.Point(1081, 264);
             this.icon_Female.Name = "icon_Female";
             this.icon_Female.Size = new System.Drawing.Size(25, 25);
             this.icon_Female.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -7939,7 +7939,7 @@ namespace Track_ShuttleRun
             this.lblUsia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(215)))), ((int)(((byte)(235)))));
             this.lblUsia.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsia.ForeColor = System.Drawing.Color.White;
-            this.lblUsia.Location = new System.Drawing.Point(1039, 285);
+            this.lblUsia.Location = new System.Drawing.Point(1021, 262);
             this.lblUsia.Name = "lblUsia";
             this.lblUsia.Size = new System.Drawing.Size(35, 29);
             this.lblUsia.TabIndex = 69;
@@ -7951,7 +7951,7 @@ namespace Track_ShuttleRun
             this.lblTanggalLahir.BackColor = System.Drawing.Color.White;
             this.lblTanggalLahir.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTanggalLahir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTanggalLahir.Location = new System.Drawing.Point(886, 378);
+            this.lblTanggalLahir.Location = new System.Drawing.Point(868, 355);
             this.lblTanggalLahir.Name = "lblTanggalLahir";
             this.lblTanggalLahir.Size = new System.Drawing.Size(133, 29);
             this.lblTanggalLahir.TabIndex = 68;
@@ -7960,7 +7960,7 @@ namespace Track_ShuttleRun
             // btn_Ulangi
             // 
             this.btn_Ulangi.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.btn_Ulangi.Location = new System.Drawing.Point(1199, 49);
+            this.btn_Ulangi.Location = new System.Drawing.Point(1181, 26);
             this.btn_Ulangi.Name = "btn_Ulangi";
             this.btn_Ulangi.Size = new System.Drawing.Size(111, 51);
             this.btn_Ulangi.TabIndex = 67;
@@ -7974,7 +7974,7 @@ namespace Track_ShuttleRun
             this.panel1.Controls.Add(this.lrtxtLog);
             this.panel1.Controls.Add(this.ckDisplayLog);
             this.panel1.Controls.Add(this.label35);
-            this.panel1.Location = new System.Drawing.Point(123, 823);
+            this.panel1.Location = new System.Drawing.Point(105, 800);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(633, 65);
             this.panel1.TabIndex = 66;
@@ -8030,11 +8030,11 @@ namespace Track_ShuttleRun
             this.Label_No_ShuttleRun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(246)))), ((int)(((byte)(249)))));
             this.Label_No_ShuttleRun.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_No_ShuttleRun.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_No_ShuttleRun.Location = new System.Drawing.Point(311, 35);
+            this.Label_No_ShuttleRun.Location = new System.Drawing.Point(333, 19);
             this.Label_No_ShuttleRun.Name = "Label_No_ShuttleRun";
-            this.Label_No_ShuttleRun.Size = new System.Drawing.Size(306, 56);
+            this.Label_No_ShuttleRun.Size = new System.Drawing.Size(186, 56);
             this.Label_No_ShuttleRun.TabIndex = 65;
-            this.Label_No_ShuttleRun.Text = "Shuttle_Run";
+            this.Label_No_ShuttleRun.Text = "Station";
             this.Label_No_ShuttleRun.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblAsalSekolah
@@ -8043,7 +8043,7 @@ namespace Track_ShuttleRun
             this.lblAsalSekolah.BackColor = System.Drawing.Color.White;
             this.lblAsalSekolah.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAsalSekolah.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblAsalSekolah.Location = new System.Drawing.Point(888, 448);
+            this.lblAsalSekolah.Location = new System.Drawing.Point(870, 425);
             this.lblAsalSekolah.Name = "lblAsalSekolah";
             this.lblAsalSekolah.Size = new System.Drawing.Size(127, 29);
             this.lblAsalSekolah.TabIndex = 63;
@@ -8056,7 +8056,7 @@ namespace Track_ShuttleRun
             this.lblNOPJurusan.BackColor = System.Drawing.Color.White;
             this.lblNOPJurusan.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNOPJurusan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNOPJurusan.Location = new System.Drawing.Point(1032, 241);
+            this.lblNOPJurusan.Location = new System.Drawing.Point(1014, 218);
             this.lblNOPJurusan.Name = "lblNOPJurusan";
             this.lblNOPJurusan.Size = new System.Drawing.Size(87, 20);
             this.lblNOPJurusan.TabIndex = 62;
@@ -8068,7 +8068,7 @@ namespace Track_ShuttleRun
             this.lblNama.BackColor = System.Drawing.Color.White;
             this.lblNama.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNama.Location = new System.Drawing.Point(1030, 213);
+            this.lblNama.Location = new System.Drawing.Point(1012, 190);
             this.lblNama.Name = "lblNama";
             this.lblNama.Size = new System.Drawing.Size(226, 29);
             this.lblNama.TabIndex = 60;
@@ -8080,7 +8080,7 @@ namespace Track_ShuttleRun
             this.btnReconnect.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReconnect.ForeColor = System.Drawing.Color.DarkBlue;
             this.btnReconnect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnReconnect.Location = new System.Drawing.Point(1200, 119);
+            this.btnReconnect.Location = new System.Drawing.Point(1182, 96);
             this.btnReconnect.Name = "btnReconnect";
             this.btnReconnect.Size = new System.Drawing.Size(109, 47);
             this.btnReconnect.TabIndex = 59;
@@ -8093,7 +8093,7 @@ namespace Track_ShuttleRun
             this.btn_Reload.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Reload.ForeColor = System.Drawing.Color.DarkBlue;
             this.btn_Reload.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_Reload.Location = new System.Drawing.Point(1110, 594);
+            this.btn_Reload.Location = new System.Drawing.Point(1092, 571);
             this.btn_Reload.Name = "btn_Reload";
             this.btn_Reload.Size = new System.Drawing.Size(199, 92);
             this.btn_Reload.TabIndex = 58;
@@ -8107,7 +8107,7 @@ namespace Track_ShuttleRun
             this.Label_Timer.Font = new System.Drawing.Font("Arial Narrow", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Timer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_Timer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_Timer.Location = new System.Drawing.Point(353, 398);
+            this.Label_Timer.Location = new System.Drawing.Point(335, 375);
             this.Label_Timer.Name = "Label_Timer";
             this.Label_Timer.Size = new System.Drawing.Size(249, 110);
             this.Label_Timer.TabIndex = 19;
@@ -8118,7 +8118,7 @@ namespace Track_ShuttleRun
             // 
             this.btnConnect.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConnect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnConnect.Location = new System.Drawing.Point(891, 594);
+            this.btnConnect.Location = new System.Drawing.Point(873, 571);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(199, 92);
             this.btnConnect.TabIndex = 57;
@@ -8132,7 +8132,7 @@ namespace Track_ShuttleRun
             this.btnInventory.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventory.ForeColor = System.Drawing.Color.White;
             this.btnInventory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnInventory.Location = new System.Drawing.Point(890, 731);
+            this.btnInventory.Location = new System.Drawing.Point(872, 708);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Size = new System.Drawing.Size(420, 58);
             this.btnInventory.TabIndex = 55;
@@ -8157,7 +8157,7 @@ namespace Track_ShuttleRun
             this.Label_Putaran3.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Putaran3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_Putaran3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_Putaran3.Location = new System.Drawing.Point(627, 629);
+            this.Label_Putaran3.Location = new System.Drawing.Point(609, 606);
             this.Label_Putaran3.Name = "Label_Putaran3";
             this.Label_Putaran3.Size = new System.Drawing.Size(126, 57);
             this.Label_Putaran3.TabIndex = 12;
@@ -8169,7 +8169,7 @@ namespace Track_ShuttleRun
             this.Label_Putaran2.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Putaran2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_Putaran2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_Putaran2.Location = new System.Drawing.Point(408, 629);
+            this.Label_Putaran2.Location = new System.Drawing.Point(390, 606);
             this.Label_Putaran2.Name = "Label_Putaran2";
             this.Label_Putaran2.Size = new System.Drawing.Size(126, 57);
             this.Label_Putaran2.TabIndex = 11;
@@ -8181,7 +8181,7 @@ namespace Track_ShuttleRun
             this.Label_Putaran1.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Putaran1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_Putaran1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_Putaran1.Location = new System.Drawing.Point(201, 629);
+            this.Label_Putaran1.Location = new System.Drawing.Point(183, 606);
             this.Label_Putaran1.Name = "Label_Putaran1";
             this.Label_Putaran1.Size = new System.Drawing.Size(126, 57);
             this.Label_Putaran1.TabIndex = 10;
@@ -8193,7 +8193,7 @@ namespace Track_ShuttleRun
             this.Label_JumlahPutaran.Font = new System.Drawing.Font("Arial Narrow", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_JumlahPutaran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_JumlahPutaran.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_JumlahPutaran.Location = new System.Drawing.Point(581, 167);
+            this.Label_JumlahPutaran.Location = new System.Drawing.Point(563, 144);
             this.Label_JumlahPutaran.Name = "Label_JumlahPutaran";
             this.Label_JumlahPutaran.Size = new System.Drawing.Size(148, 94);
             this.Label_JumlahPutaran.TabIndex = 8;
@@ -8206,7 +8206,7 @@ namespace Track_ShuttleRun
             this.Label_NoPeserta.Font = new System.Drawing.Font("Arial Narrow", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_NoPeserta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Label_NoPeserta.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Label_NoPeserta.Location = new System.Drawing.Point(244, 170);
+            this.Label_NoPeserta.Location = new System.Drawing.Point(226, 147);
             this.Label_NoPeserta.Name = "Label_NoPeserta";
             this.Label_NoPeserta.Size = new System.Drawing.Size(148, 94);
             this.Label_NoPeserta.TabIndex = 7;
@@ -8217,7 +8217,7 @@ namespace Track_ShuttleRun
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(120, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(102, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1253, 786);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -8340,13 +8340,13 @@ namespace Track_ShuttleRun
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1570, 900);
+            this.ClientSize = new System.Drawing.Size(1570, 875);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.tabCtrMain);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(300, 80);
+            this.Location = new System.Drawing.Point(300, 77);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Running Activity";
