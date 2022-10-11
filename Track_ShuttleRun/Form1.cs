@@ -110,6 +110,7 @@ namespace Track_ShuttleRun
         private int WriteTagCount = 0;
        
         public string FunctioWrong = System.Configuration.ConfigurationManager.AppSettings["FunctionSoundWrong"];
+        public string TimerStart = System.Configuration.ConfigurationManager.AppSettings["TimerStart"];
         private bool StatusStartPosisi;
 
 
@@ -6871,8 +6872,8 @@ namespace Track_ShuttleRun
             string dir = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory);
            // myPlayer.SoundLocation = @"C:\Users\Ryan\Documents\Project TCB\Project 2022\E-Shuttlerun\Main Project\E-Shuttlerun_V.01\3. E-ShuttleDesktop\Track_ShuttleRun_NRP\Track_ShuttleRun\Sound\countdown shuttle run.wav";
             myPlayer.SoundLocation = dir+@"\Sound\Start.wav";
-            myPlayer.Play();
-            await Task.Delay(6000);
+            myPlayer.Play();            
+            await Task.Delay(5300);
             isStartTime = true;
 
         }
